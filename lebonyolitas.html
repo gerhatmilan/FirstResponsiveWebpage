@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lebonyolítás - UEFA Bajnokok Ligája</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="css/basic.css">
+        <link rel="stylesheet" media="print" type="text/css" href="css/print.css">
+        <link rel="shortcut icon" href="resources/page-icon-light.png">
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-xxl fixed-top">
+            <a id="tartalomraugras" href="#content">Ugrás a fő tartalomra</a>
+
+            <div class="container-fluid">
+                <a class="navbar-brand px-3 me-0" href="index.html"><img class="mx-auto" id="logo" src="resources/page-icon-dark.png" alt=""></a>
+                
+                <div class="px-3 nav-item dropdown me-auto">
+                    <button class="btn dropDownButton dropdown-toggle text-wrap" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">STÍLUSVÁLTÁS
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a id="lightMode" class="dropdown-item" href="javascript:void(0)">Világos</a></li>
+                        <li><a id="darkMode" class="dropdown-item" href="javascript:void(0)">Sötét</a></li>
+                        <li><a id="highContrast" class="dropdown-item" href="javascript:void(0)">Gyengénlátó</a></li>
+                    </ul>
+                </div>
+                
+                <button class="navbar-toggler pe-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><img id="menuIcon" src="resources/menu-icon-dark.png" alt=""></button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="index.html">KEZDŐLAP</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active p-2" href="lebonyolitas.html">LEBONYOLÍTÁS</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="topklubok.html">LEGSIKERESEBB KLUBOK</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="eredmenyek.html">EREDMÉNYEK</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link ps-2" href="visszajelzes.html">VISSZAJELZÉS</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>    
+        </nav>
+        
+        <div id="slideshow" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000" data-bs-touch="false" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div id="slideOne" class="carousel-item active"></div>
+                <div id="slideTwo" class="carousel-item"></div>
+                <div id="slideThree" class="carousel-item"></div>
+            </div>
+        </div>
+
+        <div id="content">
+            <h1 class="text-center my-4 fw-bold">LEBONYOLÍTÁS</h1>
+            <hr>
+            <p class="lead px-2 px-md-4 px-lg-5">
+                A sorozat lebonyolítása három nagyobb egységre tagolódik: a <a href="#selejtezo"><b>selejtezőre</b></a>, a <a href="#csoportkor"><b>csoportkörre</b></a> és az <a href="#egyeneskieses"><b>egyenes kieséses szakaszra</b></a>.
+            </p>
+            <hr>
+
+            <main class="container-fluid px-md-4 px-lg-5">
+                <div class="clearfix">
+                    <div>
+                        <h2 id="selejtezo" class="fs-1">Selejtező</h2>  
+
+                        <figure class="figure col-md-8 col-xl-6 float-md-end ms-md-4 text-center">
+                            <a href="resources/draw.jpg"><img class="figure-img img-fluid rounded-3" src="resources/draw.jpg" alt="A sorsolásokon kihúzásra kerülő labdák" title="Kép megtekintése eredeti méretben"></a>
+                            <figcaption class="figure-caption fs-5 text-center">
+                                A sorsolásokon kihúzásra kerülő labdák
+                            </figcaption>
+                        </figure>                  
+                        <p>
+                            A <b>selejtező</b> öt fordulóból áll: <b>előselejtező</b>, <b>1., 2., 3. selejtezőkör</b> és a <b>rájátszás</b>.<br>
+                            A selejtező két ágra oszlik, <b>bajnoki ágra</b> és <b>nem bajnoki ágra</b>. A bajnoki ágon azok a <b>bajnokcsapatok</b>, a nem bajnoki ágon pedig azok a <b>nem bajnokcsapatok</b> szerepelnek, amelyek indulási jogot szereztek és nem kerültek közvetlenül a csoportkörbe.
+                        </p>
+                        <p>
+                            A <b>selejtezőkörökben</b> a csapatokra vonatkoztatott UEFA-együttható alapján egy sorrendet állítanak fel, a csapatokat <b>kiemeltekre</b> és nem <b>kiemeltekre</b> osztják,
+                            majd a párosításokat sorsolják. Egy kiemelthez egy nem kiemeltet párosítanak.
+                        </p>
+                        <p>
+                            Az <b>előselejtezőben</b> 4 csapat vesz részt, amelyet elődöntő-döntő rendszerben játszanak, innen 1 csapat jut tovább, 3 csapat átkerül az <a href="https://hu.wikipedia.org/wiki/Eur%C3%B3pa-liga" target="_blank"><b>Európa-liga</b></a> bajnoki ágára. A továbbiakban a selejtező oda-visszavágós, kieséses rendszerű, azaz a két találkozó végén az összesítésben jobbnak bizonyuló csapatok jutnak tovább a következő körbe.
+                        </p>
+                        <p>
+                            A <b>rájátszás</b> győztesei a <a href="#csoportkor"><b>csoportkörbe</b></a> jutnak. Valamennyi fordulóban a bajnoki ág kiesői az Európa-liga selejtezőjének bajnoki ágára, a nem bajnoki ág kiesői az Európa-liga selejtezőjének főágára kerülnek. A rájátszás vesztesei, illetve a nem bajnoki ág 3. selejtezőkörének vesztesei pedig az Európa-liga csoportkörébe kerülnek.  
+                        </p>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <h2 id="csoportkor" class="fs-1 text-md-end">Csoportkör</h2>
+
+                    <div>
+                        <figure class="figure col-md-8 col-xl-6 float-md-start me-md-4 text-center">
+                            <a href="resources/trophy.jpg"><img class="figure-img img-fluid rounded-3" src="resources/trophy.jpg" alt="A Bajnokok Ligája trófea" title="Kép megtekintése eredeti méretben"></a>
+                            <figcaption class="figure-caption fs-5 text-center">
+                                A Bajnokok Ligája trófea
+                            </figcaption>
+                        </figure>                    
+                        <p>
+                            A <b>csoportkörben</b> 32 csapat vesz részt. 26 csapat automatikus résztvevő, köztük a BL és az EL címvédője. A selejtező bajnoki ágáról 4, a nem bajnoki ágáról 2 csapat jut be. A csapatokat <b>négy kalapba</b> sorolják be. Az 1. kalap különleges, a csapatok UEFA-együtthatóitól független. Ide kerül a <b>BL és az EL címvédője</b>, valamint az országokra vonatkozó <b>UEFA-együttható</b> alapján az első, legfeljebb 8 ország <b>bajnokcsapatából</b> annyi, amennyi 8 csapatot kitesz (pl.: ha a BL és az EL címvédője ugyanolyan nemzetű, de nem nyerte meg a saját országa bajnokságát vagy nincs az első 8 ország között, akkor ezen kívül a legjobb 6 ország bajnokcsapata kerül még a kalapba). A 2–4. kalapba a többi csapat kerül, a csapatokra vonatkozó UEFA-együttható alapján.
+                        </p>
+                        <p>
+                            A 32 csapatot 8 darab <b>négycsapatos csoportba</b> sorsolják. Ezen felül az <b>azonos nemzetű</b> csapatokat négy csoportra nézve is szétosztják (A–D, E–H), a televíziós közvetítések miatt. A csoportokban a csapatok körmérkőzéses, <b>oda-visszavágós</b> rendszerben mérkőznek meg egymással. Összesen <b>hat fordulót</b> rendeznek, melyek alatt egy csoporton belül mindegyik csapat kétszer játszik mindegyikkel, egyszer pályaválasztóként egyszer pedig idegenben.
+                        </p>
+                        <p>
+                            Egy játéknapon négy csoport mérkőzéseit rendezik. Az egyik négy csoport <b>keddi</b>, a másik négy csoport <b>szerdai</b> napokon játszik, illetve fordítva. A végleges menetrendet a sorsolás után, számítógéppel állítják össze. A csoportok első két helyén záró csapatok az <a href="#egyeneskieses"><b>egyenes kieséses szakaszba</b></a> jutnak. A harmadik helyezettek az <b>Európa-liga egyenes kieséses szakaszába</b> kerülnek.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <h2 id="egyeneskieses" class="fs-1">Egyenes kieséses szakasz</h2>
+
+                    <div>
+                        <figure class="figure col-md-8 col-xl-6 float-md-end ms-md-4 text-center">
+                            <a href="resources/europa_league.jpg"><img class="figure-img img-fluid rounded-3" src="resources/europa_league.jpg" alt="Az UEFA-Európa Liga logója" title="Kép megtekintése eredeti méretben"></a>
+                            <figcaption class="figure-caption fs-5 text-center">
+                                Az UEFA-Európa Liga logója
+                            </figcaption>
+                        </figure>                    
+                        <p>
+                            Az <b>egyenes kieséses szakasz</b> oda-visszavágós rendszerben zajlik, a <b>döntő kivételével</b>. A két találkozó végén az <b>összesítésben jobbnak bizonyuló</b> csapatok jutnak tovább a következő körbe.
+                        </p>
+                        <p>
+                            A <b>nyolcaddöntő</b> párosításaihoz a csapatokat két csoportra bontják. A csoportkörben a csoport <b>első</b> helyén végzett csapatok a <b>kiemeltek</b>, a <b>második</b> helyezettek a <b>nem kiemelt</b> kalapba tartoznak. A sorsolás során egy kiemelt mellé egy nem kiemeltet párosítanak, és figyelembe veszik, hogy <b>azonos nemzetű együttesek, illetve az azonos csoportból továbbjutó csapatok nem szerepelhetnek egymás ellen</b>.
+                        </p>
+                        <p>
+                            A <b>negyeddöntőtől</b> kezdve <b>nincs kiemelés és korlátozás</b>, bármely csapat bármelyikkel összekerülhet. A döntőt egy <b>előre kijelölt helyszínen</b> rendezik, egy mérkőzés dönt a győztesről. A győztes részt vesz az <a href="https://hu.wikipedia.org/wiki/UEFA-szuperkupa" target="_blank"><b>UEFA-szuperkupán</b></a>, ahol az ellenfele az Európa-liga győztese lesz. Továbbá a következő szezonban <b>automatikus részvételi jogot</b> kap a Bajnokok Ligája csoportkörébe, ahol a sorsoláskor az első kalapba kerül. A győztes a <a href="https://hu.wikipedia.org/wiki/FIFA-klubvil%C3%A1gbajnoks%C3%A1g" target="_blank"><b>FIFA-klubvilágbajnokságra</b></a> is kijut.
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <hr>
+            <footer class="justify-content-evenly pb-2">
+                <div class="row">
+                    <div class="col-md-6 text-center fw-bold mb-3 mb-md-0"><a href="https://hu.wikipedia.org/wiki/UEFA-bajnokok_lig%C3%A1ja" target="_blank">Forrás: Wikipédia</a></div>
+                    <div class="col-md-6 text-center fw-bold mt-3 mt-md-0"> <a href="https://www.uefa.com/uefachampionsleague/" target="_blank">Az UEFA Champions League hivatalos honlapja</a></div>   
+                </div>
+                <div class="row pt-3">
+                    <div class="text-center">
+                        Az oldalon megjelenő adatok 2022 áprilisában aktuálisak!
+                    </div>
+                </div> 
+            </footer>
+        </div>
+
+        <button id="gotopbutton" type="button" class="fixed-bottom ms-auto m-2"><img id="gotop" class="hidden" src="resources/gotop_purple.png" alt=""></button>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="script/main.js"></script>
+    </body>
+</html>

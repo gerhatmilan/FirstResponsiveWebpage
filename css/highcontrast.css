@@ -1,0 +1,269 @@
+html {
+    font-size: 1.3em;
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    h2 {
+        font-size: calc(1.2rem + 1.3vw);
+    }
+}
+
+body {
+    background-color: black;
+    color: #FFFF00;
+}
+
+#navbar {
+    background-color: black;
+    transition: transform 0.5s;
+}
+
+#navbarResponsive ul li {
+    width: max-content;
+}
+
+.hideNav {
+    transform: translateY(-100%);
+}
+.showNav {
+    transform: translateY(0);
+}
+
+a.nav-link.active, a.nav-link:hover {
+    color: white !important;
+}
+
+a.nav-link:focus {
+    color: inherit;
+}
+
+.nav-link {
+    color: #ffff00;
+    font-weight: 700;
+}
+
+.navbar ul li {
+    vertical-align: middle;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.btn  {
+    font-weight: 700;
+    background-color: black;
+    color: #ffff00;
+    border: 2px solid #ffff00;
+    border-radius: 0.5em;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ffff00;
+    color: black;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.15rem white !important;
+}
+
+.dropDownButton.active {
+    background-color: #ffff00;
+    color: black;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    border-width: 0px !important;
+}
+
+@media (min-width: 361px) and (max-width: 680px) {
+    .dropdown {
+        margin-right: 0px !important;
+    }
+}
+
+@media (min-width: 3000px) {
+    main {
+        max-width: 2500px;
+    }
+}
+
+@media (max-width: 290px) {
+    nav {
+        overflow: scroll;
+    }
+    #content {
+        word-break: break-all;
+    }
+}
+
+.dropdown-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: black;
+    border-width: 1px;
+    border-color: #ffff00;
+}
+
+.dropdown-item {
+    color: #ffff00;
+}
+
+.dropdown-item:hover {
+    color: black;
+    background-color: #ffff00;
+}
+
+#slideOne {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffff00;
+    background-image: url('../resources/slide_one.jpg');
+}
+
+#slideTwo {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffff00;
+    background-image: url('../resources/slide_two.jpg');
+}
+
+#slideThree {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffff00;
+    background-image: url('../resources/slide_three.jpg');
+}
+
+
+p {
+    text-align: justify;
+    font-size: calc(1rem + 0.5vw) !important;
+}
+
+#content a {
+    color: red;
+}
+
+#content a:visited, #content a:active {
+    color: rgb(121, 0, 0);
+}
+
+main {
+    padding: 0rem 1rem;
+}
+
+footer {
+    color: #ffff00;
+    word-wrap: break-word;
+    padding: 1rem 1rem;
+}
+
+h2 {
+    color: var(--bs-white);
+}
+
+#gotopbutton {
+    width: fit-content;
+    border: 0px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+figcaption {
+    color: white !important;
+}
+
+.penalties {
+    background: rgba(17, 255, 34, 0.4) !important;
+}
+
+.addedtime {
+    background: rgba(1, 153, 255, 0.4) !important;
+}
+
+#tartalomraugras {
+    position: absolute;
+    left: -9999px;
+}
+
+/* table styles */
+
+.table {
+    color: white;
+    border-color: #ffff00;
+    background-color: rgb(16, 16, 16);
+}
+
+
+thead, thead tr, thead th {
+    color: #ffff00;
+    background-color: black;
+    border-width: 2px !important;
+}
+
+details summary {
+    margin-bottom: 1em;
+    padding: 0.2em 0.5em;
+    width: fit-content;
+}
+
+details summary::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+details div {
+    background-color: rgb(16, 16, 16);
+}
+
+tbody > tr:nth-child(even) {
+    background-color:  rgb(0, 0, 0);
+}
+
+tbody > tr:hover {
+    background-color: rgba(255,0,0,0.8);
+}
+
+/* form styles */
+
+.form-control:focus, textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.15rem var(--bs-primary) !important;
+}
+
+input,textarea, input::placeholder, textarea::placeholder {
+    color: black !important;
+    border-color: #ffff00 !important;
+    border-width: 2px !important;
+}
+
+caption {
+    caption-side: top;
+    color: white;
+}

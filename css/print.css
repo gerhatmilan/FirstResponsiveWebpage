@@ -1,0 +1,136 @@
+@media (min-width: 1200px) {
+    h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    h2 {
+        font-size: calc(1.2rem + 1.3vw);
+    }
+}
+
+#navbar {
+    display: none !important;
+}
+
+@media (min-width: 3000px) {
+    main {
+        max-width: 2500px;
+    }
+}
+
+@media (max-width: 170px) {
+    html {
+        word-break: break-all;
+    }
+}
+
+#slideOne, #slideTwo, #slideThree {
+    display: none;
+}
+
+p {
+    color: black;
+    text-align: justify;
+    font-size: calc(1rem + 0.5vw) !important;
+}
+
+h1 {
+    color: var(--bs-blue);
+}
+
+h2 {
+    color: var(--bs-blue);
+}
+
+#content a {
+    color: var(--bs-blue);
+}
+
+#content a:visited, #content a:active {
+    color: #804180;
+}
+
+main {
+    padding: 0rem 1rem;
+}
+
+video {
+    display: none;
+}
+
+#videoleiras {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+#gotopbutton {
+    display: none;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.penalties {
+    background: rgba(17, 255, 34, 0.4) !important;
+}
+
+.addedtime {
+    background: rgba(1, 153, 255, 0.4) !important;
+}
+
+#tartalomraugras {
+    position: absolute;
+    left: -9999px;
+}
+
+.dropDownButton {
+    display: none;
+}
+
+/* table styles */
+
+.table {
+    color: black;
+    border-color: var(--bs-dark);
+    background-color: var(--bs-gray-400);
+    max-width: 100% !important;
+    word-break: break-all;
+
+    font-size: 75%;
+}
+
+details {
+    color: rgba(0, 0, 0, 0.624);
+}
+
+table img {
+    display:none;
+}
+
+thead, thead tr, thead th {
+    background-color: var(--bs-gray-500) !important;
+    border-width: 2px !important;
+}
+
+details summary {
+    display: none;
+}
+
+
+tbody > tr:nth-child(odd) {
+    background-color: rgb(220, 220, 220);
+}
+
+tbody > tr:hover {
+    color: var(--bs-primary);
+}
+
+caption {
+    caption-side: top;
+    color: black;
+}

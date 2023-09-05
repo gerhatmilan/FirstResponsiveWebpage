@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visszajelzés - UEFA Bajnokok Ligája</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="css/basic.css">
+        <link rel="stylesheet" media="print" type="text/css" href="css/print.css">
+        <link rel="shortcut icon" href="resources/page-icon-light.png">
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-xxl fixed-top">
+            <a id="tartalomraugras" href="#content">Ugrás a fő tartalomra</a>
+
+            <div class="container-fluid">
+                <a class="navbar-brand px-3 me-0" href="index.html"><img class="mx-auto" id="logo" src="resources/page-icon-dark.png" alt=""></a>
+                
+                <div class="px-3 nav-item dropdown me-auto">
+                    <button class="btn dropDownButton dropdown-toggle text-wrap" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">STÍLUSVÁLTÁS
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                        <li><a id="lightMode" class="dropdown-item" href="javascript:void(0)">Világos</a></li>
+                        <li><a id="darkMode" class="dropdown-item" href="javascript:void(0)">Sötét</a></li>
+                        <li><a id="highContrast" class="dropdown-item" href="javascript:void(0)">Gyengénlátó</a></li>
+                    </ul>
+                </div>
+                
+                <button class="navbar-toggler pe-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><img id="menuIcon" src="resources/menu-icon-dark.png" alt=""></button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="index.html">KEZDŐLAP</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="lebonyolitas.html">LEBONYOLÍTÁS</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="topklubok.html">LEGSIKERESEBB KLUBOK</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link p-2" href="eredmenyek.html">EREDMÉNYEK</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active ps-2" href="visszajelzes.html">VISSZAJELZÉS</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>    
+        </nav>
+
+        <div id="slideshow" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000" data-bs-touch="false" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div id="slideOne" class="carousel-item active"></div>
+                <div id="slideTwo" class="carousel-item"></div>
+                <div id="slideThree" class="carousel-item"></div>
+            </div>
+        </div>
+
+        <div id="content">
+            <h1 class="text-center my-4 fw-bold">VISSZAJELZÉS</h1>
+
+            <hr>
+            <p class="lead px-2 px-md-4 px-lg-5">Az alábbi űrlap kitöltése opcionális. Szívesen fogadok bármilyen észrevételt, tapasztalatot az oldallal kapcsolatban.</p>
+            <hr>
+
+            <main class="container px-md-4 px-lg-5">
+                <form action="mailto:zbdlrl@inf.elte.hu" method="post" enctype="text/plain" id="form" class="mt-5 fs-5" name="form">
+                    <div class="mb-3">
+                        <label for="nevInput" class="form-label visually-hidden">Név</label>
+                        <input type="text" id="nevInput" class="form-control form-control-lg" maxlength="50" name="name" placeholder="Név:" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="emailInput" class="form-label visually-hidden">Email cím</label>
+                      <input type="email" id="emailInput" class="form-control form-control-lg" maxlength="320" name="email" placeholder="Email cím:" required>
+                    </div>
+            
+                    <div class="input-group mb-3">
+                        <span class="me-3">Milyenre értékelné az oldalt egy ötös skálán?</span>
+                        <div>
+                            <div class="input-group">
+                                <div class="form-check me-3">
+                                    <input type="radio" id="radio1" class="form-check-input"  name="rating" value="1" required>
+                                    <label for="radio1" class="form-check-label">1</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="radio2" class="form-check-input"  name="rating" value="2">
+                                    <label for="radio2" class="form-check-label">2</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="radio3" class="form-check-input"  name="rating" value="3">
+                                    <label for="radio3" class="form-check-label">3</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="radio4" class="form-check-input"  name="rating" value="4">
+                                    <label for="radio4" class="form-check-label">4</label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input type="radio" id="radio5" class="form-check-input"  name="rating" value="5">
+                                    <label for="radio5" class="form-check-label">5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="opinionInput" class="form-label visually-hidden">Bővebb vélemény az oldalról</label>
+                        <textarea id="opinionInput" class="form-control form-control-lg" rows="5" maxlength="2000" name="opinion" placeholder="Ha szeretné bővebben kifejteni véleményét az oldallal kapcsolatban:"></textarea>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="me-3">Fel szeretne iratkozni a hírlevélre?</span>                                     
+                        <div class="form-check form-switch mb-3">
+                            <input type="checkbox" role="switch" id="newsLetterInput" class="form-check-input" name="newsletter" value="true">
+                            <label for="newsLetterInput" class="form-check-label visually-hidden">Hírlevél feliratkozás</label>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-evenly">
+                        <div class="col text-center">
+                            <button type="submit" class="btn fs-4 mb-4">BEKÜLDÉS</button>
+                        </div>
+                        <div class="col text-center">
+                            <button type="reset" class="btn fs-4 mb-4">ALAPHELYZET</button>
+                        </div>
+                    </div>
+                  </form>
+            </main>
+
+            <hr>           
+            <footer class="justify-content-evenly pb-2">
+                <div class="row">
+                    <div class="col-md-6 text-center fw-bold mb-3 mb-md-0"><a href="https://hu.wikipedia.org/wiki/UEFA-bajnokok_lig%C3%A1ja" target="_blank">Forrás: Wikipédia</a></div>
+                    <div class="col-md-6 text-center fw-bold mt-3 mt-md-0"> <a href="https://www.uefa.com/uefachampionsleague/" target="_blank">Az UEFA Champions League hivatalos honlapja</a></div>   
+                </div>
+                <div class="row pt-3">
+                    <div class="text-center">
+                        Az oldalon megjelenő adatok 2022 áprilisában aktuálisak!
+                    </div>
+                </div> 
+            </footer>
+        </div>
+
+        <button id="gotopbutton" type="button" class="fixed-bottom ms-auto m-2"><img id="gotop" class="hidden" src="resources/gotop_purple.png" alt=""></button>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="script/main.js"></script>
+    </body>
+</html>
